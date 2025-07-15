@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -70,25 +71,61 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'spin-slow': {
+					from: { transform: 'rotate(0deg)' },
+					to: { transform: 'rotate(360deg)' }
+				},
+				'pulse-glow': {
+					'0%, 100%': { 
+						transform: 'scale(1)', 
+						boxShadow: '0 0 20px hsl(var(--primary-glow) / 0.5)' 
 					},
-					to: {
-						height: '0'
+					'50%': { 
+						transform: 'scale(1.05)', 
+						boxShadow: '0 0 40px hsl(var(--primary-glow) / 0.8)' 
 					}
+				},
+				'bounce-soft': {
+					'0%, 100%': { transform: 'translateY(0%)' },
+					'50%': { transform: 'translateY(-10%)' }
+				},
+				'slide-rotate': {
+					'0%': { transform: 'translateX(-100%) rotate(0deg)' },
+					'50%': { transform: 'translateX(0%) rotate(180deg)' },
+					'100%': { transform: 'translateX(100%) rotate(360deg)' }
+				},
+				'morph': {
+					'0%, 100%': { borderRadius: '50%' },
+					'25%': { borderRadius: '25% 75%' },
+					'50%': { borderRadius: '75% 25%' },
+					'75%': { borderRadius: '40% 60%' }
+				},
+				'wave': {
+					'0%, 100%': { transform: 'scaleY(1)' },
+					'50%': { transform: 'scaleY(1.5)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'spin-slow': 'spin-slow 3s linear infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'bounce-soft': 'bounce-soft 1.5s ease-in-out infinite',
+				'slide-rotate': 'slide-rotate 3s ease-in-out infinite',
+				'morph': 'morph 4s ease-in-out infinite',
+				'wave': 'wave 1s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-warm': 'var(--gradient-warm)',
+				'gradient-sunset': 'var(--gradient-sunset)',
+				'gradient-glow': 'var(--gradient-glow)'
 			}
 		}
 	},
