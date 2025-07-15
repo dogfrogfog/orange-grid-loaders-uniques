@@ -276,6 +276,142 @@ export default {
 						transform: 'scale(1.15) rotate(-15deg)',
 						filter: 'brightness(1.4) saturate(1.3)'
 					}
+				},
+				'zombie-walk': {
+					'0%, 100%': { 
+						transform: 'translateX(0px) rotate(0deg) scale(1)',
+						filter: 'hue-rotate(0deg)'
+					},
+					'25%': { 
+						transform: 'translateX(-3px) rotate(-2deg) scale(1.05)',
+						filter: 'hue-rotate(10deg)'
+					},
+					'50%': { 
+						transform: 'translateX(0px) rotate(0deg) scale(1.1)',
+						filter: 'hue-rotate(20deg)'
+					},
+					'75%': { 
+						transform: 'translateX(3px) rotate(2deg) scale(1.05)',
+						filter: 'hue-rotate(10deg)'
+					}
+				},
+				'pumpkin-glow': {
+					'0%, 100%': { 
+						transform: 'scale(1)',
+						filter: 'brightness(1) saturate(1) drop-shadow(0 0 10px rgba(255,165,0,0.5))'
+					},
+					'50%': { 
+						transform: 'scale(1.15)',
+						filter: 'brightness(1.3) saturate(1.4) drop-shadow(0 0 25px rgba(255,140,0,0.8))'
+					}
+				},
+				'stock-rise': {
+					'0%': { 
+						transform: 'translateY(10px) rotate(-5deg) scale(0.9)',
+						filter: 'brightness(1)'
+					},
+					'50%': { 
+						transform: 'translateY(-15px) rotate(2deg) scale(1.1)',
+						filter: 'brightness(1.3)'
+					},
+					'100%': { 
+						transform: 'translateY(-25px) rotate(5deg) scale(1.2)',
+						filter: 'brightness(1.5)'
+					}
+				},
+				'pizza-spin': {
+					'0%': { 
+						transform: 'rotate(0deg) scale(1)',
+						filter: 'brightness(1)'
+					},
+					'50%': { 
+						transform: 'rotate(180deg) scale(1.1)',
+						filter: 'brightness(1.2) saturate(1.2)'
+					},
+					'100%': { 
+						transform: 'rotate(360deg) scale(1)',
+						filter: 'brightness(1)'
+					}
+				},
+				'cat-bounce': {
+					'0%, 100%': { 
+						transform: 'translateY(0px) rotate(0deg)',
+						filter: 'brightness(1)'
+					},
+					'25%': { 
+						transform: 'translateY(-8px) rotate(-3deg)',
+						filter: 'brightness(1.1)'
+					},
+					'50%': { 
+						transform: 'translateY(-15px) rotate(0deg)',
+						filter: 'brightness(1.2)'
+					},
+					'75%': { 
+						transform: 'translateY(-8px) rotate(3deg)',
+						filter: 'brightness(1.1)'
+					}
+				},
+				'rainbow-wave': {
+					'0%': { 
+						transform: 'scale(1) rotate(0deg)',
+						filter: 'hue-rotate(0deg) brightness(1)'
+					},
+					'25%': { 
+						transform: 'scale(1.1) rotate(5deg)',
+						filter: 'hue-rotate(90deg) brightness(1.2)'
+					},
+					'50%': { 
+						transform: 'scale(1.2) rotate(0deg)',
+						filter: 'hue-rotate(180deg) brightness(1.3)'
+					},
+					'75%': { 
+						transform: 'scale(1.1) rotate(-5deg)',
+						filter: 'hue-rotate(270deg) brightness(1.2)'
+					},
+					'100%': { 
+						transform: 'scale(1) rotate(0deg)',
+						filter: 'hue-rotate(360deg) brightness(1)'
+					}
+				},
+				'ufo-hover': {
+					'0%, 100%': { 
+						transform: 'translateY(0px) rotate(0deg) scale(1)',
+						filter: 'brightness(1)'
+					},
+					'25%': { 
+						transform: 'translateY(-5px) rotate(2deg) scale(1.05)',
+						filter: 'brightness(1.2)'
+					},
+					'50%': { 
+						transform: 'translateY(-10px) rotate(0deg) scale(1.1)',
+						filter: 'brightness(1.4)'
+					},
+					'75%': { 
+						transform: 'translateY(-5px) rotate(-2deg) scale(1.05)',
+						filter: 'brightness(1.2)'
+					}
+				},
+				'party-burst': {
+					'0%, 100%': { 
+						transform: 'scale(1) rotate(0deg)',
+						filter: 'brightness(1) saturate(1)'
+					},
+					'20%': { 
+						transform: 'scale(1.3) rotate(20deg)',
+						filter: 'brightness(1.5) saturate(1.4)'
+					},
+					'40%': { 
+						transform: 'scale(0.9) rotate(-10deg)',
+						filter: 'brightness(0.8) saturate(0.8)'
+					},
+					'60%': { 
+						transform: 'scale(1.2) rotate(15deg)',
+						filter: 'brightness(1.4) saturate(1.3)'
+					},
+					'80%': { 
+						transform: 'scale(1.1) rotate(-5deg)',
+						filter: 'brightness(1.1) saturate(1.1)'
+					}
 				}
 			},
 			animation: {
@@ -287,14 +423,22 @@ export default {
 				'slide-rotate': 'slide-rotate 3s ease-in-out infinite',
 				'morph': 'morph 4s ease-in-out infinite',
 				'wave': 'wave 1s ease-in-out infinite',
-				'fire-flicker': 'fire-flicker 1.5s ease-in-out infinite',
-				'rocket-launch': 'rocket-launch 2s ease-in-out infinite',
-				'lightning-zap': 'lightning-zap 1.5s ease-in-out infinite',
-				'star-twinkle': 'star-twinkle 3s ease-in-out infinite',
-				'heart-beat': 'heart-beat 1.2s ease-in-out infinite',
-				'hourglass-flip': 'hourglass-flip 2.5s ease-in-out infinite',
-				'gear-spin': 'gear-spin 2s ease-in-out infinite',
-				'diamond-sparkle': 'diamond-sparkle 2.5s ease-in-out infinite'
+				'fire-flicker': 'fire-flicker 1.8s ease-in-out infinite',
+				'rocket-launch': 'rocket-launch 2.2s ease-in-out infinite',
+				'lightning-zap': 'lightning-zap 1.6s ease-in-out infinite',
+				'star-twinkle': 'star-twinkle 3.2s ease-in-out infinite',
+				'heart-beat': 'heart-beat 1.4s ease-in-out infinite',
+				'hourglass-flip': 'hourglass-flip 2.8s ease-in-out infinite',
+				'gear-spin': 'gear-spin 2.4s ease-in-out infinite',
+				'diamond-sparkle': 'diamond-sparkle 2.6s ease-in-out infinite',
+				'zombie-walk': 'zombie-walk 2s ease-in-out infinite',
+				'pumpkin-glow': 'pumpkin-glow 2.2s ease-in-out infinite',
+				'stock-rise': 'stock-rise 2.5s ease-in-out infinite',
+				'pizza-spin': 'pizza-spin 2s ease-in-out infinite',
+				'cat-bounce': 'cat-bounce 1.8s ease-in-out infinite',
+				'rainbow-wave': 'rainbow-wave 3s ease-in-out infinite',
+				'ufo-hover': 'ufo-hover 2.5s ease-in-out infinite',
+				'party-burst': 'party-burst 1.5s ease-in-out infinite'
 			},
 			backgroundImage: {
 				'gradient-warm': 'var(--gradient-warm)',
