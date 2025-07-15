@@ -48,7 +48,7 @@ export const LoadingCell: React.FC<LoadingCellProps> = ({
 
       case 'emoji-pulse':
         return (
-          <div className={`text-4xl animate-${animation} filter drop-shadow-lg`}>
+          <div className="text-4xl animate-fire-flicker filter drop-shadow-[0_0_25px_rgba(255,165,0,0.8)]">
             {emoji}
           </div>
         );
@@ -60,7 +60,7 @@ export const LoadingCell: React.FC<LoadingCellProps> = ({
 
       case 'emoji-bounce':
         return (
-          <div className={`text-4xl animate-${animation} filter drop-shadow-lg`}>
+          <div className="text-4xl animate-rocket-launch filter drop-shadow-[0_0_25px_rgba(255,165,0,0.8)]">
             {emoji}
           </div>
         );
@@ -83,7 +83,7 @@ export const LoadingCell: React.FC<LoadingCellProps> = ({
 
       case 'emoji-lightning':
         return (
-          <div className="text-4xl animate-pulse filter drop-shadow-[0_0_20px_rgba(255,165,0,0.8)]">
+          <div className="text-4xl animate-lightning-zap filter drop-shadow-[0_0_30px_rgba(255,255,0,0.9)]">
             {emoji}
           </div>
         );
@@ -99,7 +99,7 @@ export const LoadingCell: React.FC<LoadingCellProps> = ({
 
       case 'emoji-star':
         return (
-          <div className={`text-4xl animate-${animation} filter drop-shadow-lg`}>
+          <div className="text-4xl animate-star-twinkle filter drop-shadow-[0_0_25px_rgba(255,215,0,0.8)]">
             {emoji}
           </div>
         );
@@ -113,7 +113,7 @@ export const LoadingCell: React.FC<LoadingCellProps> = ({
 
       case 'emoji-heart':
         return (
-          <div className={`text-4xl animate-${animation} filter drop-shadow-lg`}>
+          <div className="text-4xl animate-heart-beat filter drop-shadow-[0_0_25px_rgba(255,105,180,0.8)]">
             {emoji}
           </div>
         );
@@ -136,7 +136,7 @@ export const LoadingCell: React.FC<LoadingCellProps> = ({
 
       case 'emoji-hourglass':
         return (
-          <div className={`text-4xl animate-${animation} filter drop-shadow-lg`}>
+          <div className="text-4xl animate-hourglass-flip filter drop-shadow-[0_0_25px_rgba(255,165,0,0.8)]">
             {emoji}
           </div>
         );
@@ -160,7 +160,7 @@ export const LoadingCell: React.FC<LoadingCellProps> = ({
 
       case 'emoji-gear':
         return (
-          <div className={`text-4xl animate-${animation} filter drop-shadow-lg`}>
+          <div className="text-4xl animate-gear-spin filter drop-shadow-[0_0_25px_rgba(128,128,128,0.8)]">
             {emoji}
           </div>
         );
@@ -180,7 +180,7 @@ export const LoadingCell: React.FC<LoadingCellProps> = ({
 
       case 'emoji-diamond':
         return (
-          <div className={`text-4xl animate-${animation} filter drop-shadow-lg`}>
+          <div className="text-4xl animate-diamond-sparkle filter drop-shadow-[0_0_30px_rgba(185,242,255,0.9)]">
             {emoji}
           </div>
         );
